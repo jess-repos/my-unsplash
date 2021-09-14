@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  height: 4rem;
+  background-color: white;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.25);
+}
+.header .header-main {
+  display: flex;
+}
+.header .header-main img {
+  margin-right: 1rem;
+}
+.header .header-control {
+  display: flex;
+  align-items: center;
+}

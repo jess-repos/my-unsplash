@@ -1,0 +1,19 @@
+.search-input {
+  font-size: 1rem;
+  padding: 1rem;
+  color: var(--color-text-light);
+  border: 1px solid var(--color-text-light);
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+.search-input label {
+  padding-right: 1rem;
+}
+.search-input input {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.search-input input:focus {
+  outline: none;
+}

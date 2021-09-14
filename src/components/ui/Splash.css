@@ -1,0 +1,19 @@
+.splash {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splash .splash-container {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.splash .splash-container img {
+  width: 16rem;
+}
+.splash .splash-container .splash-loading {
+  color: var(--color-text-dark);
+}

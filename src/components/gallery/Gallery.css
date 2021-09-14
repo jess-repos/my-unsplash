@@ -1,0 +1,19 @@
+.gallery {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  /* background-color: burlywood; */
+  column-count: 3;
+  column-gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+  }
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState, useEffect } from "react";
+import Gallery from "./components/gallery/Gallery";
+import Footer from "./components/header/Footer";
+import Header from "./components/header/Header";
+import Splash from "./components/ui/Splash";
+import Toast from "./components/ui/Toast";
 function App() {
+  const [isSplashShowing, setIsSplashShowing] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSplashShowing(false);
+    }, 3000);
+  }, []);
+  if (isSplashShowing) return <Splash />;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Gallery />
+      <Header />
+      <Footer />
+      <Toast />
     </div>
   );
 }

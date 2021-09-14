@@ -1,0 +1,20 @@
+.input-control {
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+}
+
+.input-control label,
+.input-control input {
+  display: block;
+}
+.input-control input {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 2px solid var(--color-text-dark);
+  border-radius: 12px;
+}
+.input-control input:focus {
+  outline: none;
+}
